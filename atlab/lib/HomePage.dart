@@ -35,7 +35,7 @@ class _Home extends State<Home> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.black,
-        title: Text("ATL LAB",style: TextStyle(fontSize: 30,color: Colors.white),),
+        title: Text("One Tap Service",style: TextStyle(fontSize: 30,color: Colors.white),),
 
           actions: [
             Container(
@@ -60,25 +60,16 @@ class _Home extends State<Home> {
                   ),
                   onSelected: (String value) {
                     // This method will be called when an item is selected
-                     if (value == 'Rating') {
-                      LaunchLink('https://www.adeebtechlab.com/');
-                    } else if (value == 'About') {
-                     LaunchLink('https://www.adeebtechlab.com/');
+                     if (value == 'About') {
+                      LaunchLink('https://hafiz-muhammad-rizwan.github.io/Portfolio/');
                     } else if (value == 'ContactWhatsApp') {
-                     LaunchLink('https://www.whatsapp.com/channel/0029VaCeeBg4inos1Eqtbc43');
+                     LaunchLink('https://wa.me/+923229603359');
                     }else if (value=='LinkedIN')
                       {
-                        LaunchLink('https://www.linkedin.com/company/adeebtechnologylab/');
+                        LaunchLink('www.linkedin.com/in/hafiz-muhammad-rizwan-33328a374');
                       }
                   },
                   itemBuilder: (BuildContext context) => [
-                    PopupMenuItem<String>(
-                      value: 'Rating',
-                      child: ListTile(
-                        leading: Icon(Icons.star_rate,color: Colors.black,size: 25,),
-                        title: Text("Rating",style: TextStyle(fontSize: 20,color: Colors.black,fontWeight: FontWeight.bold),),
-                      ),
-                    ),
                     PopupMenuItem<String>(
                       value: 'About',
                       child: ListTile(
